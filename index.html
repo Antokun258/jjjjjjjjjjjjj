@@ -1,0 +1,39 @@
+<html>
+<div class="bbs">
+    <ul>
+      <li><span style="background-color:#00ff00;color: #000;">停車駅</span>十三・塚口・西宮北口・夙川・岡本・神戸三宮・花隈・高速神戸・新開地</li>
+      <li><span style="background-color:#00ff00;color: #000;">ご案内</span>塚口・西宮北口・夙川・岡本・神戸三宮・花隈・高速神戸・新開地へはこの電車が先着</li>
+    </ul>
+  </div>
+  <style>
+    .bbs{
+  align-items: center;
+  background: #3e3e3e;
+  color: #fff;
+  display: flex;
+  height: 80px;
+  line-height: 80px;
+  overflow:hidden;
+  width: 800px;
+  white-space:nowrap;
+  margin-top: 100px;
+  font-family: ＭＳ ゴシック;
+  z-index: 1;
+}
+.bbs ul {
+  animation: flowing 20s linear infinite;
+  font-size: 50px;
+  transform:translateX(100%);
+  margin: 0;
+  padding: 0;
+}
+.bbs ul li{
+  display: inline-block;
+  padding-right: 800px;
+}
+@keyframes flowing {
+  0% { transform:translateX(30%); }
+  100% { transform:translateX(-100%); }
+}
+  </style>
+</html>
